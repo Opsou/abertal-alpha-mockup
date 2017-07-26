@@ -1,0 +1,62 @@
+<template>
+  <div id="app">
+    <b-navbar toggleable type="inverse">
+
+      <b-nav-toggle target="nav_collapse"></b-nav-toggle>
+
+      <b-link class="navbar-brand" to="#">
+        <span>Abertal &alpha;</span>
+      </b-link>
+
+      <b-collapse is-nav id="nav_collapse">
+
+        <b-nav is-nav-bar>
+          <b-nav-item to="new">Nuevo</b-nav-item>
+          <b-nav-item to="people">Personas</b-nav-item>
+          <b-nav-item to="memberships">Membersias</b-nav-item>
+          <b-nav-item>Grupos</b-nav-item>
+          <b-nav-item>Proyectos</b-nav-item>
+          <b-nav-item>Actividades</b-nav-item>
+        </b-nav>
+
+        <b-nav is-nav-bar class="ml-auto">
+
+          <!-- Navbar dropdowns -->
+          <b-nav-item-dropdown text="Lang" right>
+            <b-dropdown-item to="#">GL</b-dropdown-item>
+            <b-dropdown-item to="#">ES</b-dropdown-item>
+          </b-nav-item-dropdown>
+
+          <b-nav-item-dropdown right>
+            <!-- Using button-content slot -->
+            <template slot="button-content">
+              <span style="font-weight: bold;">User</span>
+            </template>
+            <b-dropdown-item to="#">Profile</b-dropdown-item>
+            <b-dropdown-item to="#">Signout</b-dropdown-item>
+          </b-nav-item-dropdown>
+
+        </b-nav>
+      </b-collapse>
+    </b-navbar>
+    <router-view></router-view>
+  </div>
+</template>
+
+<script>
+export default {
+  name: 'app'
+}
+</script>
+
+<style>
+#app {
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+}
+
+
+</style>
