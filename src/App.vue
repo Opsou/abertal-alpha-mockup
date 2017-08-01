@@ -14,9 +14,7 @@
           <b-nav-item to="new">Nuevo</b-nav-item>
           <b-nav-item to="people">Personas</b-nav-item>
           <b-nav-item to="memberships">Membersias</b-nav-item>
-          <b-nav-item>Grupos</b-nav-item>
-          <b-nav-item>Proyectos</b-nav-item>
-          <b-nav-item>Actividades</b-nav-item>
+          <b-nav-item to="components">Componentes BS</b-nav-item>
         </b-nav>
 
         <b-nav is-nav-bar class="ml-auto">
