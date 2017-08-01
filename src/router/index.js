@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Login from '@/components/Login'
+import BsComponents from '@/components/BsComponents'
 import Home from '@/components/Home'
 import New from '@/components/New'
 import People from '@/components/People'
@@ -12,6 +13,11 @@ export default new Router({
   routes: [
     {
       path: '/',
+      name: 'BootstrapComponents',
+      component: BsComponents
+    },
+    {
+      path: '/login',
       name: 'Login',
       component: Login
     },

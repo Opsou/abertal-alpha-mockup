@@ -9,9 +9,9 @@
       </b-collapse>
     </div>
 
-    <b-button variant="primary" @click="addPerson">Añadir persona</b-button>
+    <b-button variant="secondary" size="lg" @click="addPerson">Añadir persona</b-button>
 
-    <b-button variant="primary" @click="$router.push('home')">Save</b-button>
+    <b-button variant="primary" size="lg" @click="$router.push('home')">Save</b-button>
   </div>
 </template>
 

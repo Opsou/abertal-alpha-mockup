@@ -11,11 +11,13 @@ import './assets/styles.less'
 import Person from '@/components/Person'
 import MembershipTeaser from '@/components/MembershipTeaser'
 import MembershipSelect from '@/components/MembershipSelect'
+import BsCompontents from '@/components/BsComponents'
 
 Vue.use(BootstrapVue)
 Vue.component('person', Person)
 Vue.component('membership-select', MembershipSelect)
 Vue.component('membership-teaser', MembershipTeaser)
+Vue.component('bs-components', BsCompontents)
 
 Vue.config.productionTip = false
 
